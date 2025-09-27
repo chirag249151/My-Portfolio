@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chirag Sharma Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body class="bg-gradient-to-r from-gray-900 to-purple-900 text-white scroll-smooth font-sans">
+
+  <!-- 🔷 Header -->
+  <header class="sticky top-0 bg-black bg-opacity-40 backdrop-blur-md z-50 px-6 py-6 flex justify-between items-center">
+    <div class="flex items-center gap-3">
+      <img src="./portfolio-logo.jpg" alt="Logo" class="w-12 h-12 rounded-full" />
+      <h1 class="text-2xl font-bold">Chirag Sharma</h1>
+    </div>
+    <nav class="flex gap-20 text-lg md:text-xl font-medium">
+      <a href="#home" class="hover:text-pink-400">Home</a>
+      <a href="#about" class="hover:text-yellow-400">About</a>
+      <a href="#skills" class="hover:text-green-400">Skills</a>
+      <a href="#education" class="hover:text-cyan-400">Education</a>
+      <a href="#review" class="hover:text-purple-400">Reviews</a>
+      <a href="#contact" class="hover:text-red-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- 🦸 Hero Section -->
+  <section class="flex flex-col md:flex-row items-center justify-between px-10 py-20 gap-4">
+    <div data-aos="fade-right" class="max-w-xl space-y-6">
+      <h2 class="text-5xl md:text-6xl font-extrabold text-pink-400">Hi, I’m Chirag Sharma</h2>
+      <p class="text-2xl md:text-3xl font-semibold">I'm a <span class="text-yellow-400">Passionate Web Developer</span></p>
+      <p class="text-lg md:text-xl text-gray-300">Explore my extraordinary projects and boost your creativity!</p>
+      <a href="https://github.com/Chirag-Sharma151" target="_blank" class="inline-block bg-gradient-to-r from-pink-500 to-yellow-400 px-6 py-3 rounded-full font-bold shadow hover:scale-105 transition">View Projects</a>
+    </div>
+    <img data-aos="fade-left" src="./portfolio.png" alt="Hero Image" class="w-96 md:w-[28rem] h-auto rounded-xl shadow-lg" />
+  </section>
+
+  <!-- 📘 About Section -->
+  <section id="about" data-aos="fade-up" class="px-10 py-20 text-center">
+    <h3 class="text-4xl md:text-5xl font-bold text-pink-400 mb-6">About Me</h3>
+    <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-300">I’m a passionate BCA student who builds functional web apps with tech like React, Node.js, and APIs. I believe in continuous learning and pushing creative boundaries.</p>
+  </section>
+
+  <!-- 🧠 Skills Section -->
+  <section id="skills" data-aos="zoom-in" class="px-10 py-20 bg-slate-800 rounded-xl mx-6">
+    <h3 class="text-4xl md:text-5xl font-bold text-yellow-400 mb-10 text-center">My Skills</h3>
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-8 text-center text-xl md:text-2xl">
+      <div class="hover:scale-110 transition">HTML5</div>
+      <div class="hover:scale-110 transition">CSS3</div>
+      <div class="hover:scale-110 transition">JavaScript</div>
+      <div class="hover:scale-110 transition">React.js</div>
+      <div class="hover:scale-110 transition">Node.js</div>
+      <div class="hover:scale-110 transition">Git & GitHub</div>
+    </div>
+    <p class="mt-6 text-center text-base md:text-lg text-gray-400">Tools I use: VS Code, Figma, Canva, Postman</p>
+  </section>
+
+  <!-- 🎓 Education Section -->
+  <section id="education" data-aos="fade-right" class="px-10 py-20 text-center">
+    <h3 class="text-4xl md:text-5xl font-bold text-cyan-400 mb-6">Education</h3>
+    <p class="text-2xl md:text-3xl font-semibold">Completed 12th with 75% (CBSE)</p>
+    <p class="text-lg md:text-xl text-gray-300 mt-3">Bachelor of Computer Applications – St.Andrews Institute, Gurugram (2025–2029)</p>
+  </section>
+
+  <!-- 🌟 Review Section -->
+  <section id="review" data-aos="zoom-in-up" class="px-10 py-20 text-center">
+    <h3 class="text-4xl md:text-5xl font-bold text-purple-400 mb-6">Client Reviews</h3>
+    <p class="italic max-w-xl mx-auto text-lg md:text-xl">⭐️⭐️⭐️⭐️⭐️ — "Amazing work, great communication!" – John D.</p>
+  </section>
+
+  <!-- 📮 Contact Section -->
+  <section id="contact" data-aos="fade-up" class="px-10 py-20 text-center">
+    <h3 class="text-4xl md:text-5xl font-bold text-green-400 mb-6">Contact Me</h3>
+    <p class="text-lg md:text-xl text-gray-300 mb-8">Got a project or idea? Let’s collaborate!</p>
+    <form id="contact-form" class="max-w-md mx-auto space-y-6 text-base md:text-lg">
+      <input id="name" type="text" placeholder="Name" class="w-full px-4 py-3 bg-transparent border border-white rounded" />
+      <input id="email" type="email" placeholder="Email" class="w-full px-4 py-3 bg-transparent border border-white rounded" />
+      <textarea id="message" placeholder="Message" class="w-full px-4 py-3 bg-transparent border border-white rounded h-32 resize-none"></textarea>
+      <button type="submit" class="bg-gradient-to-r from-pink-500 to-yellow-400 w-full py-3 rounded-full font-bold shadow hover:scale-105 transition">Send</button>
+    </form>
+    <!-- Notification div -->
+    <div id="form-notification" class="mt-4 text-lg font-semibold"></div>
+  </section>
+
+  <!-- 🚪 Footer -->
+  <footer class="text-center text-sm md:text-base bg-black bg-opacity-20 py-6">
+    © 2025 Chirag Sharma. Copying this portfolio may result in legal action.
+  </footer>
+
+  <!-- 🎬 Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 1000 });</script>
+  <script src="./script.js"></script>
+</body>
+</html>
